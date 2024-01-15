@@ -181,7 +181,9 @@ footer{
     width: 50%;
 
     }
-.contact input[type="text"], .contact input[type="email"], textarea{
+.contact input[type="text"], 
+.contact input[type="email"],
+ textarea{
     display: block;
     margin-bottom: 25px;
     padding: 18px 35px;
@@ -200,21 +202,52 @@ footer{
         display: none;
     }
     @media screen and (max-width:576) {
-        .skills-container,.resume-container{
+        .header{
+            background-image: none;
+        }
+        nav,
+        nav > ul,
+        .banner,
+        .skills-container,
+        .resume-container,
+        .about-info-container,
+        footer{
             flex-direction: column;
         }
+        nav > ul{
+            gap: 10px;
+        }
+        .banner,.profile-picture{
+            width: 100%;
+        }
+        .banner,
         #what i-do-description{
             padding: 20px;
         }
         
     }
-    @media screen and (min-width:576) and (max-width:990) {
-        .skills-container,.resume-container{
+    @media screen and (min-width:576) and (max-width:960) {
+        footer{
+            padding: 30px;
          
         }
+        .btn-primary{
+            margin-bottom: 15px;
+        }
+        footer,.about{
+            padding: 10px;
+        }
+    .footer-column{
+        width: 100%;
+    
+    }
+    .contact input[type="text"], 
+    .contact input[type="email"],
+     textarea{
+        width: 80%;
+     }
         
     }
-
        
 
 
