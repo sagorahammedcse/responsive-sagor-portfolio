@@ -200,8 +200,17 @@ footer{
         display: none;
     }
     @media screen and (max-width:576) {
-        .skills-container{
+        .skills-container,.resume-container{
             flex-direction: column;
+        }
+        #what i-do-description{
+            padding: 20px;
+        }
+        
+    }
+    @media screen and (min-width:576) and (max-width:990) {
+        .skills-container,.resume-container{
+         
         }
         
     }
